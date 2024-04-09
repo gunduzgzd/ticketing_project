@@ -18,7 +18,7 @@ public Map<ID,T> map=new HashMap<>(); //DB
        return new ArrayList<>(map.values());
    }
 
-   T findBYId(ID id){
+   T findById(ID id){
        return map.get(id);
    }
 
