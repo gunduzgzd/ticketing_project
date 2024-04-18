@@ -32,7 +32,7 @@
                                 <div class="panel-body">
 
                                     <!-- ------------------------FORM START----------------------------- -->
-                                    <form th:object="${project}">
+                                    <form th:object="${project}" th:action="@{/project/create}" method="post">
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
@@ -148,8 +148,8 @@
                                                         <button type="button" class="btn btn-warning rounded-0">Update
                                                         </button>
                                                     </a>
-                                                    <a href="#">
-                                                        <button type="button" class="btn btn-danger rounded-0">Delete
+                                                    <a th:href="@{/project/delete/{id}(id=${project.projectCode})}">
+                                                        <button type="button" class="btn btn-danger rounded-0" >Delete
                                                         </button>
                                                     </a>
                                                     <a href="#">
