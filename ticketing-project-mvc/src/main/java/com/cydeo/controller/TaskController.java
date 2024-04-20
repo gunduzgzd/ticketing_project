@@ -1,7 +1,6 @@
 package com.cydeo.controller;
 
 import com.cydeo.dto.TaskDTO;
-import com.cydeo.dto.UserDTO;
 import com.cydeo.service.ProjectService;
 import com.cydeo.service.TaskService;
 import com.cydeo.service.UserService;
